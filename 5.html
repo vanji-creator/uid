@@ -1,0 +1,59 @@
+<html>
+<head>
+<title> info</title>
+<script>
+function formValidation()
+ {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+function F2()
+ {
+  let y = document.forms["Form"]["lname"].value;
+  if (y == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+<style>
+body
+.button
+{
+   background-color:#833502;
+   height: 50px;
+   width: 250px;
+   font-size: 20px;}
+</style>
+</head>
+<body bgcolor="lavender">
+<h1><center><font color="#ff0066"><b>FORM </b></font></center></h1><br><br><br>
+<center>
+<form name="myForm" onsubmit="return formValidation()" method="post">
+<div style="top: 99;left:590;position: absolute;z-index: 1;visibility: show;">
+<label for="fname">Name</label><font color="tomato">*</font></div>
+<input type="text" size="50" name="fname"><br><br><br>
+<div style="top:156;left:590;position: absolute;z-index: 1;visibility: show;">
+<label for="email">Email id</label><font color="tomato">*</font>(<font color=blue>privacy policy</font>)</div>
+<input type="email" required  size="50"><br><br><br>
+<div style="top:215;left:590;position: absolute;z-index: 1;    visibility: show;">
+<label for="number">Phone number</label><font color="tomato">*</font></div>
+<input type="text" required size="50"><br><br><br>
+
+<div style="top:272;left:590;position: absolute;z-index: 1;    visibility: show;">
+<label for="number">zipcode</label><font color="tomato">*</font></div>
+<input type="text" required size="50"><br><br><br>
+
+<div style="top:332;left:650;position: absolute;z-index: 1;    visibility: show;">
+<button type="submit" class="button button"><font color=white>Submit</white></button>
+</div>
+</form>
+<br>
+<br>
+<p>
+<a href="file:///C:/Users/asus/OneDrive/Desktop/uid/1.html">go back</a>
+</body>
+</html>
